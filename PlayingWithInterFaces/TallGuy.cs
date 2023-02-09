@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayingWithInterFaces
 {
-    internal class TallGuy : IClown
+    internal class TallGuy
     {
         public string Name;
         public int Height;
