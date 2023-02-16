@@ -11,7 +11,10 @@ namespace PlayingWithInterFaces
         static void Main(string[] args)
         {
             TallGuy tallGuy = new TallGuy() { Height = 76, Name = "Jimmy" };
-            tallGuy.TalkAboutYoruself();
+            tallGuy.TalkAboutYourself();
+
+            Console.WriteLine($"The tall guy has {tallGuy.FunnyThingIHave}");
+            tallGuy.Honk();
         }
     }
 }

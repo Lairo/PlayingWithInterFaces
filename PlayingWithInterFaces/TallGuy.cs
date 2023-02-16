@@ -6,14 +6,24 @@ using System.Threading.Tasks;
 
 namespace PlayingWithInterFaces
 {
-    internal class TallGuy
+    internal class TallGuy : IClown
     {
         public string Name;
         public int Height;
 
-        public void TalkAboutYoruself()
+        public void TalkAboutYourself()
         {
             Console.WriteLine($"My name is {Name} and I'm {Height} inches tall.");
         }
+
+        public string FunnyThingIHave
+        {
+            get { return "big shoes"; }
+        }
+        public void Honk()
+        {
+            Console.WriteLine("Honk honk!");
+        }
+
     }
 }

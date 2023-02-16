@@ -8,9 +8,7 @@ namespace PlayingWithInterFaces
 {
     internal interface IClown
     {
-        public string FunnyThingIHave { 
-            get { return "big shoes"; }
-        }
-        public void Honk();
+        string FunnyThingIHave { get; }
+        void Honk();
     }
 }
